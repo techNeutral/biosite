@@ -1,0 +1,119 @@
+/*
+Brett Fuller
+CSD-340 - biosite
+1/31/25
+*/
+footer{
+    position: relative;
+    font-weight: 400;
+    padding-right: 10px;
+    font-style: italic;
+    bottom: 0;
+    width: 100%;
+    float: right;
+    
+}
+header{
+    position: absolute;
+    background-color: #6886C2;
+    color: #901D37;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    top: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+    border-bottom-color: #E5bb3c;
+    z-index: 2;
+}
+h1{
+    font-weight: 600;
+}
+#container{
+    margin-left: 160px;
+    margin-top: 120px;
+    padding: 10px;
+}
+/* The side navigation menu 
+Adapted to fit my needs from code at W3Schools
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+*/
+#sidebar {
+    height: 100%; 
+    width: 10%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    bottom: 1;
+    left: 0;
+    overflow: hidden;
+    padding-top: 160px;
+    background-color: #6886C2;
+    margin-left: 0px;
+}
+#sidebar ul{
+    list-style-type: none;
+    padding: 20px 24px;
+    font-weight: 200;
+    font-size: x-large;
+    line-height: 170%;
+
+}
+#sidebar a{
+    color: #042801;
+    text-decoration: none;
+}
+#sidebar a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+footer a{
+    color: #1d15e6;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/*
+THe next several lines are WIP They are the code that makes the inline images and Full text alternating between left and right work
+But they are not as pretty as I would like.
+*/
+img.left-side{
+    position: relative;
+    display: block;
+    width: 300px;
+    padding-left: 60px;
+    float: inline-start;
+}
+p.right-side{
+    position: relative;
+    display: block;
+    padding-right: 240px;
+    padding-left: 140px;
+    font-weight: 600;
+    font-size: larger;
+}
+img.right-side{
+    position:relative;
+    display: block;
+    width: 300px;
+    padding-right: 240px;
+    float: inline-end;
+}
+p.left-side{
+    position: relative;
+    display: block;
+    font-weight: 600;
+    padding-left: 60px;
+    font-size: larger;
+}
+h1.next-block{
+    padding-left: 60px;
+    margin-top: 450px;
+}
