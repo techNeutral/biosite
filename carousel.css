@@ -52,11 +52,10 @@ The original version of this file can be found at https://www.w3schools.com/howt
 
 /* Caption text */
 figcaption {
-  color: #f2f2f2;
+  color: #042801;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
