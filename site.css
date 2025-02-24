@@ -1,8 +1,4 @@
-/*
-Brett Fuller
-CSD-340 - biosite
-1/31/25
-*/
+
 footer{
     position: relative;
     font-weight: 400;
@@ -40,9 +36,12 @@ h1{
 Adapted to fit my needs from code at W3Schools
 https://www.w3schools.com/howto/howto_js_sidenav.asp
 */
+/*
+Set a fixed width so that the sidebar did not cut off text when horizontal resolution became too narrow.
+*/
 #sidebar {
     height: 100%; 
-    width: 10%; 
+    width: 140px; 
     position: fixed; 
     z-index: 1; 
     top: 0; 
@@ -81,30 +80,30 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
-/*
-THe next several lines are WIP They are the code that makes the inline images and Full text alternating between left and right work
-But they are not as pretty as I would like.
-*/
+
 img.left-side{
     position: relative;
     display: block;
     width: 300px;
     float: inline-start;
     padding-right: 10px;
+    padding-left: 60px;
 }
 p.right-side{
     position: relative;
     display: block;
     padding-right: 240px;
-    padding-left: 140px;
+    padding-left: 60px;
     font-weight: 600;
     font-size: larger;
+    width: auto;
 }
 img.right-side{
     position:relative;
     display: block;
     width: 300px;
     padding-right: 240px;
+    padding-left: 10px;
     float: inline-end;
 }
 p.left-side{
@@ -112,7 +111,27 @@ p.left-side{
     display: block;
     font-weight: 600;
     font-size: larger;
+    padding-left: 60px;
+    padding-right: 240px;
+    width: auto;
 }
 h1.next-block{
-    margin-top: 450px;
+    margin-top: 20px;
+    padding-left: 60px;
+}
+h1.first-block{
+    padding-left: 60px;
+}
+h2{
+    padding-left: 60px;
+}
+/*added column-gap and changed spacing to cleanup white space and leave the site looking more or less
+as intended regardless of resolution */
+div.block{
+    flex-direction: column;
+    display: inline-block;
+    position: relative;
+
+    height: auto;
+    column-gap: 25px;
 }
